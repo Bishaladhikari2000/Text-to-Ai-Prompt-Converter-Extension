@@ -1,0 +1,150 @@
+body {
+  font-family: 'Arial', sans-serif; /* Use a modern font */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height for centering */
+  background-color: #e9ecef; /* Light gray background */
+}
+
+.app {
+  width: 400px; /* Fixed width for better usability */
+  padding: 20px;
+  background-color: #ffffff; /* White background for a clean look */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for material design */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+h1 {
+  font-size: 1.8em; /* Slightly larger title */
+  color: #333; /* Darker text color */
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.input-textarea {
+  width: 100%;
+  height: 120px; /* Height for better text input */
+  padding: 16px; /* Increased padding for better text input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width */
+  resize: none; /* Disable resizing */
+  font-size: 1.2em; /* Increased font size for better readability */
+  line-height: 1.5; /* Increased line height for better spacing */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth border transition */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.input-textarea:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}
+
+.prompt-type-dropdown {
+  width: 100%;
+  padding: 12px; /* Padding for better usability */
+  margin-top: 10px; /* Space above dropdown */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 1em; /* Font size for better readability */
+  background-color: #fff; /* White background */
+  transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.prompt-type-dropdown:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.convert-button, .done-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px; /* Space above buttons */
+  cursor: pointer;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 1em; /* Font size for better readability */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.convert-button:hover, .done-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.convert-button:active, .done-button:active {
+  transform: translateY(1px); /* Press effect */
+}
+
+.output-container {
+  margin-top: 15px; /* Space above the output container */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: stretch; /* Stretch items to fill the container */
+}
+
+.output-prompt {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333; /* Darker text color */
+  background-color: #e9ecef; /* Light gray background */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 6px; /* Rounded corners */
+  padding: 12px; /* Padding for better text display */
+  word-wrap: break-word; /* Handle long words */
+  font-size: 1em; /* Font size for better readability */
+}
+
+.button-group {
+  display: flex; /* Use flexbox for button layout */
+  justify-content: space-between; /* Space between buttons */
+  margin-top: 10px; /* Space above button group */
+}
+
+.copy-button, .edit-button {
+  padding: 10px;
+  border-radius: 6px; /* Rounded corners */
+  font-size: 0.9em; /* Slightly smaller font size */
+  flex: 1; /* Allow buttons to grow equally */
+  margin-right: 5px; /* Space between buttons */
+}
+
+.copy-button {
+  background-color: #28a745; /* Green background for copy button */
+  color: white; /* White text color */
+}
+
+.copy-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.edit-button {
+  background-color: #ffc107; /* Yellow background for edit button */
+  color: black; /* Black text color */
+}
+
+.edit-button:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1); /* Light border */
+  border-left-color: #007bff; /* Primary color for the spinner */
+  border-radius: 50%; /* Circular shape */
+  width: 24px; /* Spinner size */
+  height: 24px; /* Spinner size */
+  animation: spin 1s linear infinite; /* Spin animation */
+  margin: 10px auto; /* Center the spinner */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
