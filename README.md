@@ -2,7 +2,9 @@
 
 ## Introduction
 
-The AI Prompt Converter is a web application built with React that allows users to convert their input text into AI prompts using the GroqCloud API. This application provides a straightforward interface for generating creative prompts tailored to various purposes, enhancing user productivity and creativity.
+AI Prompt Converter is a Chrome extension built with React that transforms user input into creative AI prompts using the GroqCloud API. Its simple interface boosts productivity and creativity directly within the browser.
+
+This application provides a straightforward interface for generating creative prompts tailored to various purposes, enhancing user productivity and creativity.
 
 ## Features
 
